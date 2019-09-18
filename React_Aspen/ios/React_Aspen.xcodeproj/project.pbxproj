@@ -19,6 +19,13 @@
 		2DCD954D1E0B4F2C00145EB5 /* React_AspenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* React_AspenTests.m */; };
 		A66950D2BBD62941BE965935 /* libPods-React_Aspen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B33644FAE734D569B5F7C29 /* libPods-React_Aspen.a */; };
 		A719770A90693AFEBA0C8AEC /* libPods-React_AspenTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAD34B46498CBE6837FF46E /* libPods-React_AspenTests.a */; };
+		ACB83EB82332274E00C16BEB /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACB83EB62332274300C16BEB /* Montserrat-Black.ttf */; };
+		ACB83EB92332274E00C16BEB /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACB83EB72332274300C16BEB /* Montserrat-Bold.ttf */; };
+		ACB83EBA2332274E00C16BEB /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACB83EB32332274300C16BEB /* Montserrat-Light.ttf */; };
+		ACB83EBB2332274E00C16BEB /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACB83EB12332274200C16BEB /* Montserrat-Medium.ttf */; };
+		ACB83EBC2332274E00C16BEB /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACB83EB52332274300C16BEB /* Montserrat-Regular.ttf */; };
+		ACB83EBD2332274E00C16BEB /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACB83EB42332274300C16BEB /* Montserrat-SemiBold.ttf */; };
+		ACB83EBE2332274E00C16BEB /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACB83EB22332274200C16BEB /* Montserrat-Thin.ttf */; };
 		E67044D9DFBDBC6418BFF510 /* libPods-React_Aspen-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE34E28469C395ADE152829C /* libPods-React_Aspen-tvOS.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +69,13 @@
 		9050FFC37AE1B9C1CD770B99 /* libPods-React_Aspen-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-React_Aspen-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9069A5D4898D459850A72D4A /* Pods-React_Aspen-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-React_Aspen-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-React_Aspen-tvOS/Pods-React_Aspen-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		90EC127D7B733F04D1F52A31 /* Pods-React_Aspen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-React_Aspen.release.xcconfig"; path = "Pods/Target Support Files/Pods-React_Aspen/Pods-React_Aspen.release.xcconfig"; sourceTree = "<group>"; };
+		ACB83EB12332274200C16BEB /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		ACB83EB22332274200C16BEB /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		ACB83EB32332274300C16BEB /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		ACB83EB42332274300C16BEB /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		ACB83EB52332274300C16BEB /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		ACB83EB62332274300C16BEB /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		ACB83EB72332274300C16BEB /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		C14CF352E0B475BAB9E57970 /* Pods-React_Aspen-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-React_Aspen-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-React_Aspen-tvOS/Pods-React_Aspen-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D9864F512524C83574AB96BC /* Pods-React_Aspen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-React_Aspen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-React_Aspen/Pods-React_Aspen.debug.xcconfig"; sourceTree = "<group>"; };
 		DE34E28469C395ADE152829C /* libPods-React_Aspen-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-React_Aspen-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +194,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				2A44802819844006568FA17D /* Pods */,
+				D3C951627F324248B6583C19 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -195,6 +210,20 @@
 				2D02E4901E0B4A5D006451C7 /* React_Aspen-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D3C951627F324248B6583C19 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ACB83EB62332274300C16BEB /* Montserrat-Black.ttf */,
+				ACB83EB72332274300C16BEB /* Montserrat-Bold.ttf */,
+				ACB83EB32332274300C16BEB /* Montserrat-Light.ttf */,
+				ACB83EB12332274200C16BEB /* Montserrat-Medium.ttf */,
+				ACB83EB52332274300C16BEB /* Montserrat-Regular.ttf */,
+				ACB83EB42332274300C16BEB /* Montserrat-SemiBold.ttf */,
+				ACB83EB22332274200C16BEB /* Montserrat-Thin.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,12 +313,15 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						ProvisioningStyle = Manual;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -335,6 +367,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB83EB82332274E00C16BEB /* Montserrat-Black.ttf in Resources */,
+				ACB83EB92332274E00C16BEB /* Montserrat-Bold.ttf in Resources */,
+				ACB83EBA2332274E00C16BEB /* Montserrat-Light.ttf in Resources */,
+				ACB83EBB2332274E00C16BEB /* Montserrat-Medium.ttf in Resources */,
+				ACB83EBC2332274E00C16BEB /* Montserrat-Regular.ttf in Resources */,
+				ACB83EBD2332274E00C16BEB /* Montserrat-SemiBold.ttf in Resources */,
+				ACB83EBE2332274E00C16BEB /* Montserrat-Thin.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -625,8 +664,10 @@
 			baseConfigurationReference = D9864F512524C83574AB96BC /* Pods-React_Aspen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = React_Aspen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -636,6 +677,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = React_Aspen;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -645,7 +688,9 @@
 			baseConfigurationReference = 90EC127D7B733F04D1F52A31 /* Pods-React_Aspen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = React_Aspen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -655,6 +700,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = React_Aspen;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
