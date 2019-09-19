@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
 
     // Login screen 
     logoImage: {
-        flex: 1.5,
+        flex: 2,
        
         alignSelf:'center',
         bottom:30
@@ -58,12 +58,29 @@ const styles = StyleSheet.create({
 
     }, 
     controlContainerView: {
+        flex:1,
         borderRadius: 19,
-        flex: 0.30,
-        margin: '2%',
-        width: '75%',
+        margin: '1%',
         overflow: 'hidden',  
           
+    },loginButtonView: {
+        flex:1,
+        borderRadius: 19,
+        margin: '1%',
+        marginTop:'5%',
+        overflow: 'hidden',  
+        backgroundColor:MyColor.themeColor,
+        color:'white',
+    },signupButtonView: {
+        flex:0.6,
+        borderRadius: 19,
+        marginTop:'5%',
+        overflow: 'hidden',  
+        borderColor:'white',
+        borderWidth:2,
+        color:'white',
+        
+
     }
 
 
