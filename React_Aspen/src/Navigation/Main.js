@@ -6,8 +6,9 @@ import Privacy from  '../View/screens/LoginModule/Privacy'
 const MainNav = () => (
 <Router>
 <Stack key="root">
-<Scene key="login" component={login} title="Login" hideNavBar='false'/>
 <Scene key="Otp" component={OTP} title="OTP" hideNavBar='false'/>
+<Scene key="login" component={login} title="Login" hideNavBar='false'/>
+
 <Scene key="Privacy" component={Privacy} title="Privacy" hideNavBar='false'/>
 </Stack>
 </Router>

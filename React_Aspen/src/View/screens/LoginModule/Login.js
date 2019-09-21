@@ -11,7 +11,7 @@ export default class Login extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick() {
-    Actions.push("Privacy");
+    Actions.push("Otp");
   }
   render() {
     return (
