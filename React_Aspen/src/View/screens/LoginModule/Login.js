@@ -1,17 +1,24 @@
 
 import React, { Fragment } from 'react';
-import { Text, TouchableOpacity, View, Image, TextInput } from 'react-native';
+import { Text, TouchableOpacity, View, Image, TextInput,Linking } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import myStyle from '../../Style/viewStyle';
 import MyColor from '../../Style/color';
 export default class Login extends React.Component {
   constructor() {
     super();
-
-    this.handleClick = this.handleClick.bind(this);
+    this.goToPrivacy = this.goToPrivacy.bind(this);
+    this.goToOtp = this.goToOtp.bind(this);
+    this.goToAspenWeb = this.goToAspenWeb.bind(this);
   }
-  handleClick() {
+  goToOtp() {
     Actions.push("Otp");
+  }
+  goToPrivacy() {
+    Actions.push("Privacy");
+  }
+  goToAspenWeb() {
+    Linking.openURL("https://www.google.com").catch((err) => console.error('An error occurred', err));
   }
   render() {
     return (
@@ -41,7 +48,7 @@ export default class Login extends React.Component {
               </View>
             </View>
             <View style={myStyle.loginButtonView}>
-              <TouchableOpacity onPress={this.handleClick} style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, alignItems: 'center', justifyContent: 'center' }} >
+              <TouchableOpacity onPress={this.goToOtp} style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, alignItems: 'center', justifyContent: 'center' }} >
                 <Text style={{ color: 'white', fontSize: 20, fontFamily: 'Montserrat-SemiBold' }}>
                   LOGIN
              </Text>
@@ -50,7 +57,7 @@ export default class Login extends React.Component {
           </View>
           <View style={{ flex: 0.7, justifyContent: 'center' }}>
 
-            <TouchableOpacity>
+            <TouchableOpacity onPress={this.goToAspenWeb}>
               <Text style={{ fontSize: 14, color: 'white', fontFamily: 'Montserrat-Regular' }}>
                 Forgot your password?
                </Text>
@@ -62,7 +69,7 @@ export default class Login extends React.Component {
               Not Registered Yet?
                 </Text>
             <View style={myStyle.signupButtonView}>
-              <TouchableOpacity onPress={this.handleClick} style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, alignItems: 'center', justifyContent: 'center' }} >
+              <TouchableOpacity onPress={this.goToAspenWeb} style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, alignItems: 'center', justifyContent: 'center' }} >
                 <Text style={{ color: 'white', fontSize: 20, fontFamily: 'Montserrat-SemiBold' }}>
                   SIGN UP
              </Text>
@@ -71,7 +78,7 @@ export default class Login extends React.Component {
 
           </View>
           <View style={{ flex: 2,alignItems:'center' }}>
-           <TouchableOpacity onPress={this.handleClick} style={{flex:0.4,justifyContent:'center'   }} >
+           <TouchableOpacity onPress={this.goToPrivacy} style={{flex:0.4,justifyContent:'center'   }} >
                 <Text style={{ color: MyColor.themeColor, fontSize: 14, fontFamily: 'Montserrat-Regular' }}>
                   Privacy Policy
              </Text>

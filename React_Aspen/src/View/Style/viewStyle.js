@@ -8,7 +8,12 @@ const styles = StyleSheet.create({
     backgroundImage: {
         flex: 1,
         width: null,
-        height: null
+        height: null,
+        position: 'absolute',
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
 
     },
     Form: {
