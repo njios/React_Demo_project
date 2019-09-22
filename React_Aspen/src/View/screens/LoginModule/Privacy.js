@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Image,TouchableOpacity, Text} from 'react-native';
 import myStyle from '../../Style/viewStyle';
-import Browser from '../WebView';
+import Browser from '../common/WebView';
 import { Actions } from 'react-native-router-flux';
 export default class Privacy extends React.Component {
 
