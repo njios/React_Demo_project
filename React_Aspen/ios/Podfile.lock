@@ -86,6 +86,8 @@ PODS:
     - IQKeyboardManager (= 4.0.13)
     - React
     - React-RCTText
+  - RNSVG (9.9.4):
+    - React
   - yoga (0.60.5.React)
 
 DEPENDENCIES:
@@ -112,6 +114,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
   - ReactNativeKeyboardManager (from `../node_modules/react-native-keyboard-manager`)
+  - RNSVG (from `../node_modules/react-native-svg`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -164,6 +167,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/WebSocket"
   ReactNativeKeyboardManager:
     :path: "../node_modules/react-native-keyboard-manager"
+  RNSVG:
+    :path: "../node_modules/react-native-svg"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -192,8 +197,9 @@ SPEC CHECKSUMS:
   React-RCTVibration: dabb8d59bb47e1d9124b3f77bfdc1b33d42b0a74
   React-RCTWebSocket: 2e7f6e98fd6d2bf447d145e499c3a235cc13e350
   ReactNativeKeyboardManager: cb917a17e6100f6e0adfedff245ff1eafd80ecbe
+  RNSVG: 2e097b92aaa6d4e0f354fd7c49cbf3b17f8b3920
   yoga: 88c514f310aff89b94a14c5fbf44b95735af0cb7
 
-PODFILE CHECKSUM: dccfd2408219f06d92758cdee9950abd2216cf4d
+PODFILE CHECKSUM: a8dea64427529ca650ed5a4b0f4c2adec8bc63d0
 
 COCOAPODS: 1.5.3

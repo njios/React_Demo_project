@@ -12,7 +12,7 @@ export default class Home extends React.Component {
         this.handleClick = this.handleClick.bind(this);
     }
     handleClick() {
-        Actions.pop();
+       Actions.push("Opps")
     }
     render() {
         localStyle = StyleSheet.create({
@@ -52,7 +52,7 @@ export default class Home extends React.Component {
 
                 <Image source={require('../../Assets.xcassets/background.imageset/gradient1.png')} style={myStyle.backgroundImage} />
                 <View style={{ flex: 0.3, flexDirection: 'row', marginTop: 50 }}>
-                    <TouchableOpacity onPress={this.handleClick} style={{ justifyContent: 'center', zIndex: 2, alignItems: 'center', width: '20%' }} >
+                    <TouchableOpacity  style={{ justifyContent: 'center', zIndex: 2, alignItems: 'center', width: '20%' }} >
                         <Image source={require('../../Assets.xcassets/hamburger.imageset/group5.png')} style={{ width: null, height: null, position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, resizeMode: 'center' }} />
                     </TouchableOpacity>
                     <Text style={{ color: 'white', width: '100%', position: 'absolute', zIndex: 1, left: 0, right: 0, fontSize: 16, alignItems: 'center', justifyContent: 'center', alignSelf: 'center', textAlign: 'center', fontFamily: 'Montserrat-SemiBold' }}>
@@ -91,7 +91,7 @@ export default class Home extends React.Component {
                             <Text style={localStyle.cardTextStyle}>
                                 {"(CMR)"}
                             </Text>
-                            <TouchableOpacity style={{position:'absolute', top:0,bottom:0,right:0,left:0}}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.handleClick} style={{position:'absolute', top:0,bottom:0,right:0,left:0}}></TouchableOpacity>
                         </View>
                         <View style={{ flex: 0.06 }}>
 
@@ -106,7 +106,7 @@ export default class Home extends React.Component {
                             <Text style={localStyle.cardTextStyle}>
                                 {"(TMR)"}
                             </Text>
-                            <TouchableOpacity style={{position:'absolute', top:0,bottom:0,right:0,left:0}}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.handleClick} style={{position:'absolute', top:0,bottom:0,right:0,left:0}}></TouchableOpacity>
                         </View>
                     </View>
                     <View style={{ flex: 0.3 }}>

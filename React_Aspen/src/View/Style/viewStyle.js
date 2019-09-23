@@ -86,9 +86,30 @@ const styles = StyleSheet.create({
         color:'white',
         
 
+    },
+
+    tetxStyle: {
+        color: 'white',
+        width: '100%',
+        marginTop: '1.5%',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        textAlign: 'center',
+        fontFamily: 'Montserrat-Medium'
+    },
+    size16: {
+        fontSize: 16
+    },
+    size35: {
+        fontSize: 35
+    },
+    size14: {
+        fontSize: 14
+    },
+    size13: {
+        fontSize: 13
     }
-
-
 
 
 });

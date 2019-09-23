@@ -34,11 +34,14 @@ export default class OTP extends React.Component {
 
   constructor() {
     super();
-
+this.confirmClicked = this.confirmClicked.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick() {
-    Actions.pop
+    Actions.pop()
+  }
+  confirmClicked(){
+    Actions.reset('main')
   }
   state = {
     code: ""
@@ -76,7 +79,7 @@ export default class OTP extends React.Component {
             </View>
            
             <View style={{ flex: 1,justifyContent:'center' }}>
-              <TouchableOpacity onPress={this.handleClick} style={{ flex: 0.35, alignItems: 'center', backgroundColor: MyColor.themeColor, justifyContent: 'center', borderRadius: 19 }} >
+              <TouchableOpacity onPress={this.confirmClicked} style={{ flex: 0.35, alignItems: 'center', backgroundColor: MyColor.themeColor, justifyContent: 'center', borderRadius: 19 }} >
                 <Text style={{ color: 'white', fontSize: 20, fontFamily: 'Montserrat-SemiBold' }}>
                   CONFIRM
              </Text>
