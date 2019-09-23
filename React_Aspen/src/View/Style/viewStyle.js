@@ -97,6 +97,15 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         textAlign: 'center',
         fontFamily: 'Montserrat-Medium'
+    }, defaultText: {
+
+        width: '100%',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        textAlign: 'center',
+        fontFamily: 'Montserrat-Regular',
+        fontSize: 14
     },
     size16: {
         fontSize: 16
@@ -109,7 +118,13 @@ const styles = StyleSheet.create({
     },
     size13: {
         fontSize: 13
-    }
+    },
+    borderShadow: {
+        shadowColor: 'grey',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 2,
+    },
 
 
 });

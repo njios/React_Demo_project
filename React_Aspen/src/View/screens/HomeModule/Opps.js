@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image, TouchableOpacity, Text, StyleSheet } from 'react-native';
+import {FlatList, View, Image, TouchableOpacity, Text, StyleSheet, Dimensions } from 'react-native';
 import myStyle from '../../Style/viewStyle';
 import myColor from '../../Style/color';
 import { Actions } from 'react-native-router-flux';
@@ -9,7 +9,9 @@ export default class Opps extends React.Component {
 
     constructor() {
         super();
-
+        this.state = {
+            height: Dimensions.get('window').height
+        }
         this.handleClick = this.handleClick.bind(this);
     }
     handleClick() {
@@ -40,18 +42,18 @@ export default class Opps extends React.Component {
                 </View>
                 <View style={{ flex: 5 }}>
                     <View style={{ flex: 1.2 }}>
-                        <View style={{ flex: 2,alignItems:'center',justifyContent:'center' }}>
+                        <View style={{ flex: 2, alignItems: 'center', justifyContent: 'center' }}>
                             <AnimatedCircularProgress
-                                style={{justifyContent:'center',alignItems:'center',position:'absolute',top:0,bottom:0,right:0,left:0, transform: [{ rotate: '270deg'}]}}
-                                size={100}
+                                style={{ justifyContent: 'center', alignItems: 'center', position: 'absolute', top: 0, bottom: 0, right: 0, left: 0, transform: [{ rotate: '270deg' }] }}
+                                size={this.state.height / 9}
                                 width={5}
                                 fill={50}
                                 tintColor="white"
                                 onAnimationComplete={() => console.log('onAnimationComplete')}
                                 backgroundColor="#3d5875" />
-                                 <Text style={[myStyle.tetxStyle, myStyle.size35]}>
-                                {'14'}
-                            </Text>     
+                            <Text style={[myStyle.tetxStyle, myStyle.size35]}>
+                                {'19'}
+                            </Text>
                         </View>
 
                         <View style={{ flex: 1, flexDirection: 'column' }}>
@@ -67,7 +69,44 @@ export default class Opps extends React.Component {
 
                     </View>
                     <View style={{ flex: 3.8, backgroundColor: myColor.themeBG }}>
-
+                        <View style={[myStyle.borderShadow, { backgroundColor: 'white', flex: 0.4, flexDirection: 'row' }]}>
+                          <View style={{ flex: 0.2 }}></View>
+                            <TouchableOpacity style={{ flex: 1, justifyContent: 'center', alignItems: 'center',marginBottom:'0.2%', borderBottomWidth: 1, borderBottomColor: '#328fce' }}>
+                                <Text style={[myStyle.defaultText,{color:'#328fce'}]}>
+                                    OPPORTUNITIES
+                                 </Text>
+                            </TouchableOpacity>
+                            <View style={{ flex: 0.2 }}></View>
+                            <TouchableOpacity style={{ flex: 1, justifyContent: 'center', alignItems: 'center',marginBottom:'0.2%', borderBottomWidth: 1,borderBottomColor: '#333333' }}>
+                                <Text style={[myStyle.defaultText,,{color:'#333333'}]}>
+                                    MY WORK QUEUE
+                                 </Text>
+                            </TouchableOpacity>
+                            <View style={{ flex: 0.2 }}></View>
+                        </View>
+                        <View style={{ flex: 4,flexDirection:'row'}}>
+                        <FlatList style={{width:'80%',alignSelf:'center'}}
+          data={[
+            {key: 'Devin'},
+            {key: 'Dan'},
+            {key: 'Dominic'},
+            {key: 'Jackson'},
+            {key: 'James'},
+            {key: 'Joel'},
+            {key: 'John'},
+            {key: 'Jillian'},
+            {key: 'Jimmy'},
+            {key: 'Julie'},
+          ]}
+          renderItem={({item}) => 
+        <View style={{backgroundColor:'white',height:this.state.height/6}}>
+<Text>
+    item.key
+</Text>
+            </View>
+        }
+        />
+                        </View>
                     </View>
                 </View>
 

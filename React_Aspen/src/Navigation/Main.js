@@ -8,18 +8,19 @@ import Opps from '../View/screens/HomeModule/Opps'
 const MainNav = () => (
 
     <Router>
-        <Stack key="root">
+        <Stack key="root" hideNavBar='true'>
+     
+            <Scene key="Opps" component={Opps} title="Opps" hideNavBar='true' />
+            <Scene key="Home" component={Home} title="Home" hideNavBar='false' />
+       </Stack>
+        {/* <Stack key="main">
 
             <Scene key="login" component={login} title="Login" hideNavBar='false' />
             <Scene key="Privacy" component={Privacy} title="Privacy" hideNavBar='false' />
             <Scene key="Otp" component={OTP} title="OTP" hideNavBar='false' />
 
-            <Stack key="main" hideNavBar='true'>
-                <Scene key="Opps" component={Opps} title="Opps" hideNavBar='true' />
-                <Scene key="Home" component={Home} title="Home" hideNavBar='false' />
-
-            </Stack>
-        </Stack>
+            
+        </Stack> */}
     </Router>
 );
 
