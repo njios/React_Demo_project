@@ -1,5 +1,5 @@
 import React from 'react';
-import {FlatList, View, Image, TouchableOpacity, Text, StyleSheet, Dimensions } from 'react-native';
+import {FlatList, View, Image, TouchableOpacity, Text, StyleSheet, Dimensions,ScrollView } from 'react-native';
 import myStyle from '../../Style/viewStyle';
 import myColor from '../../Style/color';
 import { Actions } from 'react-native-router-flux';
@@ -85,6 +85,7 @@ export default class Opps extends React.Component {
                             <View style={{ flex: 0.2 }}></View>
                         </View>
                         <View style={{ flex: 4,flexDirection:'row'}}>
+                            <ScrollView>
                         <FlatList style={{width:'80%',alignSelf:'center'}}
           data={[
             {key: 'Devin'},
@@ -93,19 +94,25 @@ export default class Opps extends React.Component {
             {key: 'Jackson'},
             {key: 'James'},
             {key: 'Joel'},
-            {key: 'John'},
+            {key: 'John',
+            value:'neeraj'},
             {key: 'Jillian'},
             {key: 'Jimmy'},
             {key: 'Julie'},
           ]}
           renderItem={({item}) => 
-        <View style={{backgroundColor:'white',height:this.state.height/6}}>
+        <View style={{backgroundColor:'white',width:'100%',alignSelf:'center',marginBottom:'2%',marginTop:'2%'}}>
 <Text>
-    item.key
+   {item.key}
 </Text>
+<Text style={{justifyContent:'center',alignItems:'center'}} >
+    {item.value}
+</Text>
+
             </View>
         }
         />
+        </ScrollView>
                         </View>
                     </View>
                 </View>
