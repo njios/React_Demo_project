@@ -119,6 +119,9 @@ const styles = StyleSheet.create({
     size13: {
         fontSize: 13
     },
+    size8: {
+        fontSize: 8
+    },
     borderShadow: {
         shadowColor: 'grey',
         shadowOffset: { width: 0, height: 2 },
