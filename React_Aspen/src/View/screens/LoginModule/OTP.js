@@ -4,7 +4,8 @@ import { Text, TouchableOpacity, View, Image, TextInput, StyleSheet } from 'reac
 import { Actions } from 'react-native-router-flux';
 import myStyle from '../../Style/viewStyle';
 import MyColor from '../../Style/color';
-import OTPInputView from '@twotalltotems/react-native-otp-input';
+import OTPInputView from '../../../CutomLibraries/@twotalltotems/react-native-otp-input';
+
 
 const LocalStyle = StyleSheet.create({
   borderStyleBase: {
@@ -26,7 +27,8 @@ const LocalStyle = StyleSheet.create({
   },
 
   underlineStyleHighLighted: {
-    borderColor: 'white',
+    borderColor: MyColor.themeColor,
+    borderBottomWidth: 4
   },
 });
 export default class OTP extends React.Component {
